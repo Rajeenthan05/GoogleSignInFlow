@@ -12,9 +12,7 @@ function Register() {
     console.log("logging in with google")
     window.location.href = 'http://localhost:5050/login/google';
   };
-
-  
-  const handleRegister = async (e) => {
+   const handleRegister = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:5050/register', {
@@ -22,7 +20,7 @@ function Register() {
         email,
         password
       });
-      navigate('/home'); // Navigate to home page
+      navigate('/home'); 
       alert('Registration successful!');
     } catch (error) {
       alert('Registration failed!');

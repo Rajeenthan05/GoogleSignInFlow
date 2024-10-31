@@ -21,9 +21,9 @@ function Login() {
         password
       });
       navigate('/home'); // Navigate to home page
-      alert('Login successful!');
+      alert('Login successfully!!!');
     } catch (error) {
-      alert('Login failed!');
+      alert('Oops!!! Login failed!!!');
     }
   };
 
@@ -31,7 +31,7 @@ function Login() {
     <div className="auth-container">
       <h2>Login</h2>
       <form className="auth-form" onSubmit={handleLocalLogin}>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder='Enter Email ...' />
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder='Valid Email ...' />
         
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required  placeholder='Enter Password ...'/>
         <button type="submit">Login</button>
