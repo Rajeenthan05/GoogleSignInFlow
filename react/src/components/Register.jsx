@@ -31,11 +31,8 @@ function Register() {
     <div className="auth-container">
       <h2>Register</h2>
       <form className="auth-form" onSubmit={handleRegister}>
-        
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} required placeholder='Enter Name ...' />
-     
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder='Enter Email ...' />
-     
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} required placeholder='Enter Name ...' />     
+        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder='Enter Email ...' />     
         <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required placeholder='Enter Password ...' />
         <button type="submit">Register</button>
       </form>
